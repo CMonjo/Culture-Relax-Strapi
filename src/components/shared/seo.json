@@ -1,0 +1,31 @@
+{
+    "collectionName": "components_shared_seos",
+    "info": {
+        "displayName": "seo"
+    },
+    "options": {},
+    "attributes": {
+        "metaTitle": {
+            "type": "string",
+            "required": true,
+            "maxLength": 65
+        },
+        "metaDescription": {
+            "type": "text",
+            "required": true,
+            "maxLength": 165
+        },
+        "metaImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "hideIndexing": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}
