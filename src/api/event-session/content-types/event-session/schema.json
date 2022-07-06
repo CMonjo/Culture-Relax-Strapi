@@ -1,0 +1,195 @@
+{
+    "kind": "collectionType",
+    "collectionName": "event_sessions",
+    "info": {
+        "singularName": "event-session",
+        "pluralName": "event-sessions",
+        "displayName": "EventSession",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "date": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            },
+            "type": "date",
+            "required": true
+        },
+        "time": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            },
+            "type": "time",
+            "required": true
+        },
+        "pricing": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            },
+            "type": "string",
+            "required": true
+        },
+        "falcGuide": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "files"
+            ],
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
+        "accessibility": {
+            "type": "enumeration",
+            "enum": [
+                "Tout public",
+                "Situation de handicap"
+            ],
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "additionalInformation": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "richtext",
+            "required": false
+        },
+        "keywords": {
+            "type": "enumeration",
+            "enum": [
+                "Mot clé 1",
+                "Mot clé 2"
+            ],
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "pictures": {
+            "type": "media",
+            "multiple": true,
+            "required": true,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "offWall": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "component": "shared.address",
+            "required": false
+        },
+        "roomDescription": {
+            "type": "richtext",
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "totalSpectator": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            },
+            "type": "integer"
+        },
+        "totalDisabilitiesSpectator": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            },
+            "type": "integer"
+        },
+        "totalPeopleMbilized": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            },
+            "type": "integer"
+        },
+        "rating": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            },
+            "type": "integer",
+            "max": 5,
+            "required": false,
+            "min": 1
+        },
+        "commentEvent": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text",
+            "required": true
+        },
+        "commentEventSession": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text",
+            "required": true
+        },
+        "report": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "text",
+            "required": false
+        },
+        "testimony": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "component": "shared.testimony"
+        }
+    }
+}

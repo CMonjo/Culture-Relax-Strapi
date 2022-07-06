@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_socials",
+  "info": {
+    "displayName": "socials"
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+        "type": "string"
+    },
+    "phoneNumber": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "facebook": {
+        "type": "string"
+    },
+    "instagram": {
+        "type": "string"
+    },
+    "youtube": {
+        "type": "string"
+    },
+    "linkedin": {
+        "type": "string"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "collectionName": "components_shared_addresses",
+    "info": {
+        "displayName": "address",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "address1": {
+            "type": "string",
+            "required": true
+        },
+        "address2": {
+            "type": "string",
+            "required": false
+        },
+        "zipCode": {
+            "type": "string",
+            "required": true
+        },
+        "city": {
+            "type": "string",
+            "required": true
+        },
+        "country": {
+            "type": "string",
+            "required": true
+        },
+        "longitude": {
+            "type": "float",
+            "default": 0,
+            "required": true
+        },
+        "latitude": {
+            "type": "float",
+            "default": 0,
+            "required": true
+        }
+    }
+}

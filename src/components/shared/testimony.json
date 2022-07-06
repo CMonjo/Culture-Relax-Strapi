@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_testimonies",
+  "info": {
+    "displayName": "testimony"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Live",
+        "A",
+        "Archive"
+      ],
+      "required": true,
+      "default": "Live"
+    }
+  }
+}

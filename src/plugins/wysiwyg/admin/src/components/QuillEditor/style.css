@@ -1,0 +1,7 @@
+.ql-editor strong, .ql-editor b {
+    font-weight: bold;
+}
+
+.ql-editor em, .ql-editor i {
+    font-style: italic;
+}
