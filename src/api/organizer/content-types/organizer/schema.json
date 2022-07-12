@@ -70,7 +70,7 @@
         }
       },
       "component": "shared.socials",
-      "required": true
+      "required": false
     },
     "mainContact": {
       "pluginOptions": {
