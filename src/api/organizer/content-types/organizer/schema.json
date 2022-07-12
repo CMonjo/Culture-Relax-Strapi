@@ -103,6 +103,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::organizer.organizer"
+    },
+    "event_sessions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event-session.event-session",
+      "mappedBy": "organizer"
     }
   }
 }

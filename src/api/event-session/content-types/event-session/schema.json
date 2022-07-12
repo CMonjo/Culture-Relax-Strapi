@@ -16,6 +16,19 @@
         }
     },
     "attributes": {
+        "eventSessionType": {
+            "type": "enumeration",
+            "enum": [
+                "Movie",
+                "Spectacle"
+            ],
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        },
         "date": {
             "pluginOptions": {
                 "i18n": {
@@ -190,6 +203,30 @@
                 }
             },
             "component": "shared.testimony"
+        },
+        "movie": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::movie.movie",
+            "inversedBy": "event_sessions"
+        },
+        "spectacle": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::spectacle.spectacle",
+            "inversedBy": "event_sessions"
+        },
+        "theater": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::theater.theater",
+            "inversedBy": "event_sessions"
+        },
+        "organizer": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::organizer.organizer",
+            "inversedBy": "event_sessions"
         }
     }
 }

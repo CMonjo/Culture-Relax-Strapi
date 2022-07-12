@@ -136,6 +136,12 @@
           "localized": true
         }
       }
+    },
+    "event_sessions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event-session.event-session",
+      "mappedBy": "movie"
     }
   }
 }
