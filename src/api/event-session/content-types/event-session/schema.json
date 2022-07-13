@@ -174,7 +174,7 @@
                 }
             },
             "type": "text",
-            "required": true
+            "required": false
         },
         "commentEventSession": {
             "pluginOptions": {
@@ -183,7 +183,7 @@
                 }
             },
             "type": "text",
-            "required": true
+            "required": false
         },
         "report": {
             "pluginOptions": {
