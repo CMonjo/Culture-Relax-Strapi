@@ -93,26 +93,6 @@
       },
       "type": "richtext",
       "required": true
-    },
-    "cinema": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
-    "spectacle": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "boolean",
-      "default": true,
-      "required": true
     }
   }
 }
