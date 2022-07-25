@@ -39,8 +39,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "articles",
-      "required": true
+      "inversedBy": "articles"
     },
     "image": {
       "type": "media",
